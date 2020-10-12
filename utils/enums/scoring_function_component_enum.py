@@ -29,6 +29,8 @@ class ScoringFunctionComponentNameEnum():
     __HERG = "herg"
     __SA_SCORE = "sa_score"
     __AZDOCK = "azdock"
+    __SPARSECHEM = "sparsechem"
+
 
     @property
     def AZDOCK(self):
@@ -253,3 +255,12 @@ class ScoringFunctionComponentNameEnum():
     @SA_SCORE.setter
     def SA_SCORE(self, value):
         raise ValueError("Do not assign value to a ScoringFunctionComponentNameEnum field")
+
+    @property
+    def SPARSECHEM(self):
+        return self.__SPARSECHEM
+
+    @SPARSECHEM.setter
+    def SPARSECHEM(self, value):
+        raise ValueError("Do not assign value to a ScoringFunctionComponentNameEnum field")
+
